@@ -12,6 +12,24 @@
     "slideshow_trix8L": {
       "type": "slideshow",
       "blocks": {
+        "slide_QdGPA9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/bernadette_banner-tote-banner1.2.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Bernadette Banner Totes",
+            "heading_size": "h1",
+            "subheading": "For all your society essentials",
+            "button_label": "View collection",
+            "link": "shopify://collections/basics-series",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        },
         "slide_Ufy9PF": {
           "type": "slide",
           "settings": {
@@ -38,7 +56,7 @@
             "heading": "We're Here Merch",
             "heading_size": "h1",
             "subheading": "...is here!",
-            "button_label": "Button label",
+            "button_label": "View more",
             "link": "shopify://collections/by-multi",
             "button_style_secondary": false,
             "show_text_box": true,
@@ -50,6 +68,7 @@
         }
       },
       "block_order": [
+        "slide_QdGPA9",
         "slide_Ufy9PF",
         "slide_hKER7L"
       ],
