@@ -20,55 +20,32 @@
 
 {% style %}
   .announcement-bar__message a { color: inherit }
+  .announcement-bar__message a { margin: 0 }
+
+  .announcement-bar {
+    display: flex ;
+    overflow: hidden ;
+    white-space: nowrap ;
+  }
 
   .announcement-bar__message {
-    overflow: hidden;
-    position: relative;
-    width: inherit
+    animation-duration: 4s ;
+    animation-iteration-count: infinite ;
+    animation-name: marquee-content ;
+    animation-timing-function: linear ;
+    padding: 5px 15px 5px 15px ;
   }
-  
-  .announcement-bar__message p {
-    margin: 0;
-    position: absolute;
-    width: max-content;
-    height: 100%;
 
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 2s linear infinite;
-    -webkit-animation: scroll-left 2s linear infinite;
-    animation: scroll-left 20s linear infinite;
+  .announcement-bar:hover .announcement-bar__message {
+    animation-play-state: paused ;
   }
-  
-  @-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
+
+  @keyframes marquee-content {
+    from {
+      transform: translateX( 0% );
     }
-    100% {
-        -moz-transform: translateX(-100%);
-    }
-  }
-  
-  @-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+    to {
+      transform: translateX( -100% );
     }
   }
   
@@ -88,6 +65,23 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ section.blocks.first.shopify_attributes }}
       >
+        {%- if section.blocks.first.settings.text != blank -%}
+          {%- if section.blocks.first.settings.link != blank -%}
+            <a
+              href="{{ section.blocks.first.settings.link }}"
+              class="announcement-bar__link link link--text focus-inset animate-arrow"
+            >
+          {%- endif -%}
+          <div class="announcement-bar__message h5">
+            {{ section.blocks.first.settings.text }}
+            {%- if section.blocks.first.settings.link != blank -%}
+              {{- 'icon-arrow.svg' | inline_asset_content -}}
+            {%- endif -%}
+          </div>
+          {%- if section.blocks.first.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
         {%- if section.blocks.first.settings.text != blank -%}
           {%- if section.blocks.first.settings.link != blank -%}
             <a
