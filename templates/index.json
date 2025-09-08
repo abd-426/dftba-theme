@@ -156,14 +156,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<h3><strong>DFTBA helps creators make a living doing what they love. Since 2008 we have helped hundreds of these creators connect with their communities and customers through high quality merchandise and exceptional customer service.</strong></h3>"
           }
         }
       },
@@ -174,10 +174,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-ca17f31b-534c-42fb-98f0-8bc77035c9a7",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "featured_collection": {
