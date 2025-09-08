@@ -15,34 +15,36 @@
         "slide_Ufy9PF": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/answerinprogress-checkouttrackerbookmark-site1.webp",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "Reading in Progress Bookmarks",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "Track your reading with this pack of 10 bookmarks from Answer In Progress",
+            "button_label": "Get them here!",
+            "link": "shopify://products/gift-card",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "color_scheme": "scheme-4"
           }
         },
         "slide_hKER7L": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/2025-we_re-here-banner-2.webp",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "We're Here Merch",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "...is here!",
             "button_label": "Button label",
-            "link": "",
+            "link": "shopify://collections/by-multi",
             "button_style_secondary": false,
             "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
+            "box_align": "bottom-right",
+            "text_alignment": "right",
+            "text_alignment_mobile": "right",
             "color_scheme": ""
           }
         }
