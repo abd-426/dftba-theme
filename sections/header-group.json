@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Print On Demand items are currently experiencing higher than normal processing times. Please reach out to hello@dftba.com with any concerns regarding your order.",
+            "text": "<p>Print On Demand items are currently experiencing higher than normal processing times. Please reach out to <a href=\"/pages/contact\" title=\"Contact\">hello@dftba.com</a> with any concerns regarding your order.</p>",
             "link": ""
           }
         }
