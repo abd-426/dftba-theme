@@ -24,7 +24,7 @@
             "link": "shopify://collections/basics-series",
             "button_style_secondary": false,
             "show_text_box": true,
-            "box_align": "middle-center",
+            "box_align": "top-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-3"
@@ -65,12 +65,31 @@
             "text_alignment_mobile": "right",
             "color_scheme": "scheme-3"
           }
+        },
+        "slide_mJ4Kmb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/board-game.png",
+            "image_overlay_opacity": 0,
+            "heading": "Domain of Science",
+            "heading_size": "h1",
+            "subheading": "Get your board game loving bff the perfect bundle!",
+            "button_label": "View collection",
+            "link": "shopify://collections/premium-series",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "top-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-5"
+          }
         }
       },
       "block_order": [
         "slide_QdGPA9",
         "slide_Ufy9PF",
-        "slide_hKER7L"
+        "slide_hKER7L",
+        "slide_mJ4Kmb"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
