@@ -120,6 +120,40 @@
             </a>
           {%- endif -%}
         {%- endif -%}
+        {%- if section.blocks.first.settings.text != blank -%}
+          {%- if section.blocks.first.settings.link != blank -%}
+            <a
+              href="{{ section.blocks.first.settings.link }}"
+              class="announcement-bar__link link link--text focus-inset animate-arrow"
+            >
+          {%- endif -%}
+          <div class="announcement-bar__message h5">
+            {{ section.blocks.first.settings.text }}
+            {%- if section.blocks.first.settings.link != blank -%}
+              {{- 'icon-arrow.svg' | inline_asset_content -}}
+            {%- endif -%}
+          </div>
+          {%- if section.blocks.first.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+        {%- if section.blocks.first.settings.text != blank -%}
+          {%- if section.blocks.first.settings.link != blank -%}
+            <a
+              href="{{ section.blocks.first.settings.link }}"
+              class="announcement-bar__link link link--text focus-inset animate-arrow"
+            >
+          {%- endif -%}
+          <div class="announcement-bar__message h5">
+            {{ section.blocks.first.settings.text }}
+            {%- if section.blocks.first.settings.link != blank -%}
+              {{- 'icon-arrow.svg' | inline_asset_content -}}
+            {%- endif -%}
+          </div>
+          {%- if section.blocks.first.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
       </div>
     {%- elsif section.blocks.size > 1 -%}
       <slideshow-component
