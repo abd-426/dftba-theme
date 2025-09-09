@@ -338,6 +338,114 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "newsletter_a4DB6w": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_4MepgA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Be the first to know!</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_nzACfz": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Get the latest updates from your favorite creators plus product launches, limited-run merch, sales, and events happening soon!</p>"
+          }
+        },
+        "email_form_GmY7c6": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_4MepgA",
+        "paragraph_nzACfz",
+        "email_form_GmY7c6"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "scheme-362541de-5bf4-4f92-a9ed-55bf40760a66",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_HBCmLf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TmzkX9": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Not only does DFTBA support an amazing cause, but the products are way beyond my wildest dreams in terms of both creativity and quality. I can’t recommend it enough and I think my friends may be sick of hearing me tell them about it. Great news though: that never stops me.</strong>",
+            "text": "<p>Victoria B</p><p>Verified Customer</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FY7xAF": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Wonderful products, amazing cause. I love supporting the shows.</strong>",
+            "text": "<p>Mark B.</p><p>Verified customer</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G3k4z3": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>The products are unique and I love supporting some of my favorite creators & getting a trinket or clothing item that I enjoy as well.</strong>",
+            "text": "<p>Mary M</p><p>Verified customer</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qyT7V6": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Love what dftba stands for and how much it does for the world and community.</strong>",
+            "text": "<p>Cacey Y</p><p>Verified customer</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_D6YTRq": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Love supporting whatever crazy ideas John and Hank have to decrease world suck. The stuff is always great quality and attractively designed.</strong>",
+            "text": "<p>Lauren D</p><p>Verified customer</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TmzkX9",
+        "column_FY7xAF",
+        "column_G3k4z3",
+        "column_qyT7V6",
+        "column_D6YTRq"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "<strong>What Our Customers Are Saying</strong>",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -346,6 +454,8 @@
     "collection_list_MRwqpH",
     "image_with_text_9HDURy",
     "collection_list_LapTyw",
-    "multicolumn_wwLQtp"
+    "multicolumn_wwLQtp",
+    "newsletter_a4DB6w",
+    "multicolumn_HBCmLf"
   ]
 }
