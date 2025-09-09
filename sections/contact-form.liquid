@@ -13,8 +13,8 @@
     }
   }
 
-  .form-reminders { margin: 20px; }
-  .form-reminders p { margin-bottom: 0 }
+  .form-reminders { margin-top: 20px; }
+  .form-reminders p { margin-bottom: 0; margin-top: 5px }
   .form-reminders a { color: inherit }
 {%- endstyle -%}
 
@@ -127,8 +127,8 @@
         </label>
       </div>
       <div class="contact__button">
-        <button type="submit" class="button" style="width: 100%">
-          {{ 'templates.contact.form.send' | t }}
+        <button type="submit" class="button" style="width: 100%; font-weight: bold">
+          {{ 'templates.contact.form.send' | t | upcase }}
         </button>
       </div>
       <div class="h5 form-reminders">
