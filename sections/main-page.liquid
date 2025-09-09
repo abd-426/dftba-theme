@@ -14,7 +14,7 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+<div class="page-width page-width--narrow section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
     style="text-align: {{ section.settings.title_alignment }}"
   >
@@ -50,6 +50,12 @@
       ],
       "default": "left",
       "label": "Title alignment"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     },
     {
       "type": "header",
