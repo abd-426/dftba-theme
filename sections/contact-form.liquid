@@ -12,6 +12,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .form-reminders { margin: 20px; }
+  .form-reminders p { margin-bottom: 0 }
+  .form-reminders a { color: inherit }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -127,7 +131,7 @@
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>
-      <div class="h5">
+      <div class="h5 form-reminders">
         <p>Fields marked with an asterisk (*) are required.</p>
         <p>This site is protected by hCaptcha and the hCaptcha <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.</p>
       </div>
