@@ -11,10 +11,113 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
-        "show_collection_description": true,
+        "show_collection_description": false,
         "show_collection_image": false,
         "color_scheme": "scheme-1"
+      }
+    },
+    "image_with_text_kG9KEt": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_7nVRpM": {
+          "type": "caption",
+          "settings": {
+            "caption": "Introducing",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "heading_wptqmL": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_cdVD7c": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "text_style": "subtitle"
+          }
+        },
+        "button_h4Q3cW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_7nVRpM",
+        "heading_wptqmL",
+        "text_cdVD7c",
+        "button_h4Q3cW"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "{{ collection.image }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_bM3DBd": {
+      "type": "featured-product",
+      "blocks": {
+        "text_gHht7N": {
+          "type": "text",
+          "settings": {
+            "text": "Featured Product",
+            "text_style": "subtitle"
+          }
+        },
+        "title_AGjjLP": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_PVdAAF": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_gHht7N",
+        "title_AGjjLP",
+        "text_PVdAAF"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "{{ collection.metafields.custom.featured_product.value }}",
+        "color_scheme": "scheme-fee0b903-a86e-4979-8f94-e0dde5d37fa5",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-grid": {
@@ -22,13 +125,17 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
         "columns_mobile": "2",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -36,6 +143,8 @@
   },
   "order": [
     "banner",
+    "image_with_text_kG9KEt",
+    "featured_product_bM3DBd",
     "product-grid"
   ]
 }
