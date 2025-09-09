@@ -244,12 +244,108 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_LapTyw": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ed6FcU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "by-hydrogen"
+          }
+        },
+        "featured_collection_KLzLPf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "by-snowboard-vendor"
+          }
+        },
+        "featured_collection_UYjiPD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "by-multi"
+          }
+        },
+        "featured_collection_qpRfpi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "by-dftba"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ed6FcU",
+        "featured_collection_KLzLPf",
+        "featured_collection_UYjiPD",
+        "featured_collection_qpRfpi"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "<strong>Featured Creators</strong>",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_wwLQtp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xDtDJg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/NileRed-NileBlueBottleOpener-Site.webp",
+            "title": "NileBlue OTF Bottle Opener",
+            "text": "<p>The viral collab from NileBlue & Flipped Tools!</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/the-compare-at-price-snowboard"
+          }
+        },
+        "column_tdHgnn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/map.png",
+            "title": "Map of Fungi Poster",
+            "text": "<p>A new map about the amazing kingdom of fungi from Domain of Science. Learn all about structures of microscopic hyphae, mycorrhiza, and more!</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/the-collection-snowboard-hydrogen"
+          }
+        }
+      },
+      "block_order": [
+        "column_xDtDJg",
+        "column_tdHgnn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "You don't want to miss these!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow_trix8L",
     "rich_text",
     "collection_list_MRwqpH",
-    "image_with_text_9HDURy"
+    "image_with_text_9HDURy",
+    "collection_list_LapTyw",
+    "multicolumn_wwLQtp"
   ]
 }
