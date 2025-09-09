@@ -16,7 +16,7 @@
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
-    style
+    style="text-align: {{ section.settings.title_alignment }}"
   >
     {{ page.title | escape }}
   </h1>
