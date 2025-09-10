@@ -88,6 +88,7 @@
             {% endif %}
           >
             {%- for product in block.settings.collection.products limit: 5 -%}
+              <div style="height: 400px">
                 {% render 'card-product',
                   card_product: product,
                   media_aspect_ratio: 'adapt',
@@ -97,6 +98,7 @@
                   section_id: section.id,
                   quick_add: 'standard'
                 %}
+              </div>
             {%- endfor -%}
           </li>
         {%- endfor -%}
