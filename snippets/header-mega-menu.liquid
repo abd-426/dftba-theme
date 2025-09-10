@@ -142,7 +142,9 @@
                     endif
                   %}
                   {% for image in submenu_images %}
-                    <div class="submenu" style="background-image: url({{ image.settings.image | image_url: height: 500 }})">
+                    <div class="submenu" 
+                      style="background-image: url({{ image.settings.image | image_url: height: 500 }}); height: 500px"
+                    >
                       {{ image.settings.heading }}
                     </div>
                   {% endfor %}
