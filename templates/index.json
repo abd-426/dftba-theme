@@ -110,7 +110,7 @@
           "type": "header_image",
           "settings": {
             "image": "shopify://shop_images/SecondaryLogo_DarkGreen-Orange.webp",
-            "image_height": 50
+            "image_height": 75
           }
         },
         "heading": {
