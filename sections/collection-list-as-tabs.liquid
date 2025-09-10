@@ -87,13 +87,26 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
-            {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
-            {% render 'card-collection',
-              card_collection: block.settings.collection,
-              media_aspect_ratio: section.settings.image_ratio,
-              placeholder_image: placeholder_image
-            %}
+            {%- for product in block.settings.collection.products limit: 5 -%}
+              <li
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                {% render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: 'adapt',
+                  image_shape: 'default',
+                  lazy_load: true,
+                  show_secondary_image: true,
+                  section_id: section.id,
+                  quick_add: 'standard'
+                %}
+              </li>
+            {%- endfor -%}
           </li>
         {%- endfor -%}
       </ul>
