@@ -37,6 +37,20 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "submenu_image_8FjJbf": {
+          "type": "submenu_image",
+          "settings": {
+            "image": "shopify://shop_images/black-and-white-shirt.png",
+            "heading": "<strong>We're Here</strong>",
+            "subheading": "Because we're here",
+            "link": "shopify://collections/by-hydrogen"
+          }
+        }
+      },
+      "block_order": [
+        "submenu_image_8FjJbf"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "mobile_logo_position": "center",
