@@ -5,13 +5,13 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-<style>
+{% style %}
   .dropdown-menu {
     position: relative;
     display: block;
   }
 
-  {% comment %} .dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     width: max-content;
@@ -19,8 +19,8 @@
     z-index: 1;
   }
 
-  .dropdown-menu:hover .dropdown-content { display: block; } {% endcomment %}
-</style>
+  .dropdown-menu:hover .dropdown-content { display: block; }
+{% endstyle %}
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
