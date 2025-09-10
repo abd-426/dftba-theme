@@ -61,10 +61,11 @@
         "submenu_image_d7JxdY": {
           "type": "submenu_image",
           "settings": {
-            "menu_title": "",
-            "heading": "",
+            "image": "shopify://shop_images/awesome-collaborating-team.png",
+            "menu_title": "about",
+            "heading": "<strong>The DFTBA Team</strong>",
             "subheading": "",
-            "link": ""
+            "link": "shopify://pages/the-dftba-team"
           }
         }
       },
