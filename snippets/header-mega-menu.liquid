@@ -11,15 +11,15 @@
     display: block;
   }
 
-  .dropdown-content {
+  {% comment %} .dropdown-content {
     display: none;
-    {% comment %} position: absolute;
+    position: absolute;
     width: max-content;
     padding: 20px 25px;
-    z-index: 1; {% endcomment %}
+    z-index: 1;
   }
 
-  .dropdown-menu:hover .dropdown-content { display: block; }
+  .dropdown-menu:hover .dropdown-content { display: block; } {% endcomment %}
 </style>
 
 <nav class="header__inline-menu">
