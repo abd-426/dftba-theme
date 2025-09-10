@@ -22,7 +22,7 @@
           {%- case block.type -%}
             {% when 'header_image' %}
               {% if block.settings.image %}
-                {{ block.setting.image | image_url: height: 150 }}
+                {{ block.settings.image | image_url: height: 400 }}
               {% endif %}
             {%- when 'heading' -%}
               <h2
