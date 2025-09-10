@@ -5,12 +5,6 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-{% style %}
-  .with-submenu:hover .submenu {
-    display: block
-  }
-{% endstyle %}
-
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -20,7 +14,7 @@
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
               <summary
                 id="HeaderMenu-{{ link.handle }}"
-                class="header__menu-item list-menu__item link focus-inset with-submenu"
+                class="header__menu-item list-menu__item link focus-inset"
               >
                 <span
                   {%- if link.child_active %}
@@ -29,10 +23,11 @@
                 >
                   {{- link.title | escape -}}
                 </span>
+                {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup submenu"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
                 <ul
