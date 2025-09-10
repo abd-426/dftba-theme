@@ -21,6 +21,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {% when 'header_image' %}
+              {{ block.settings.image_height }}
               {{ block.setting.image | image_url: height: block.settings.image_height | image_tag }}
             {%- when 'heading' -%}
               <h2
