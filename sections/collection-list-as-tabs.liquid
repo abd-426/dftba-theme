@@ -77,9 +77,6 @@
           <label class="tab" for="collection-{{ forloop.index }}">{{ block.settings.collection.title }}</label>
         {% endfor %}          
 
-        <div>
-
-        
         {%- for block in section.blocks -%}
           <li
             id="Slide-content-{{ forloop.index }}"
@@ -98,7 +95,7 @@
               placeholder_image: placeholder_image
             %}
           </li>
-        {%- endfor -%}</div>
+        {%- endfor -%}
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons">
