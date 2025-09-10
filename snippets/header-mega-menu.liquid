@@ -79,10 +79,13 @@
               <div id="MegaMenu-Content-{{ forloop.index }}"
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce dropdown-content"
               >
+                {% if link.title | downcase == 'shop '%}
+                  {% assign column_template = 'repeat(4,1fr)' %}
+                {% endif %}
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
-                  style="border: 1px solid; padding: 0; grid-template-columns: {% if link.title | upcase == 'shop' %}repeat(4, 1fr){% endif %}"
+                  style="border: 1px solid; padding: 0; grid-template-columns: "
                 >
                   {%- for childlink in link.links -%}
                     <li>
