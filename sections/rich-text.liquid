@@ -17,7 +17,7 @@
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="rich-text__blocks {{ section.settings.content_alignment }}" style="width: 750px">
+      <div class="rich-text__blocks {{ section.settings.content_alignment }}" style="max-width: {{section.settings.text_container_width}}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {% when 'header_image' %}
@@ -158,6 +158,16 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "range",
+      "id": "text_container_width",
+      "min": 250,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "label": "Text container width",
+      "default": 1150
     },
     {
       "type": "header",
