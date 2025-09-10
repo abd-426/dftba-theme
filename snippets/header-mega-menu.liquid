@@ -40,7 +40,7 @@
   assign about_images = images | where: "menu_title", "about"
 %}
 
-{{ shop_images.size }}
+{{ images.first.settings.menu_title }}
 {{ about_images.size }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
