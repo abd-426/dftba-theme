@@ -36,8 +36,8 @@
 {% endstyle %}
 
 {% liquid
-  assign shop_images = images | where: "settings.menu_title", "Shop"
-  assign about_images = images | where: "menu_title", "about"
+  assign shop_images = images.first
+  assign about_images = images | slice: 1, 2
 %}
 
 {{ shop_images.size }}
