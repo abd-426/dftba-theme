@@ -142,7 +142,7 @@
                     endif
                   %}
                   {% for image in submenu_images %}
-                    <a href={{ image.settings.link }}>
+                    <a href={{ image.settings.link }} style="text-decoration: none">
                       <div class="submenu" 
                         style="background-image: url({{ image.settings.image | image_url: height: 400 }}); height: 400px"
                       >
