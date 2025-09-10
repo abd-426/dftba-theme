@@ -42,6 +42,7 @@
           "type": "submenu_image",
           "settings": {
             "image": "shopify://shop_images/black-and-white-shirt.png",
+            "menu_title": "Shop",
             "heading": "<strong>We're Here</strong>",
             "subheading": "Because we're here",
             "link": "shopify://collections/by-hydrogen"
