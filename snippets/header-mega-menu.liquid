@@ -85,9 +85,9 @@
                   role="list"
                   style="padding: 0; display: grid; gap: 0; grid-template-columns: {% if link_title == 'shop' %}repeat(4,1fr);{% else %}repeat(3,1fr);{% endif %}"
                 >
-                  
+                  {% if link_title != 'shop' %}<div style="border: 1px solid; padding: 30px;">{% endif %}
                     {%- for childlink in link.links -%}
-                    <div style="border: 1px solid; padding: 30px;">
+                    {% if link_title == 'shop' %}<div style="border: 1px solid; padding: 30px;">{% endif %}
                       <li>
                         <a
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"s
@@ -118,9 +118,9 @@
                           </ul>
                         {%- endif -%}
                       </li>
-                    </div>
+                    {% if link_title == 'shop' %}</div>{% endif %}
                     {%- endfor -%}
-                  
+                  {% if link_title != 'shop' %}</div>{% endif %}
                 </ul>
               </div>
             </div>
