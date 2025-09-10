@@ -88,7 +88,7 @@
             {% endif %}
           >
             {%- for product in block.settings.collection.products limit: 5 -%}
-              <div style="height: 400px">
+              <div style="max-height: 400px">
                 {% render 'card-product',
                   card_product: product,
                   media_aspect_ratio: 'adapt',
