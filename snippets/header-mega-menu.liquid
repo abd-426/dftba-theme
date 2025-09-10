@@ -40,8 +40,6 @@
   assign about_images = images | slice: 1, 2
 %}
 
-{{ shop_images.size }}
-{{ about_images.size }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -128,6 +126,18 @@
                     {% if link_title == 'shop' %}</div>{% endif %}
                     {%- endfor -%}
                   {% if link_title != 'shop' %}</div>{% endif %}
+                  {% liquid 
+                    if link_title == 'shop'
+                      assign submenu_images = shop_images
+                    else
+                      assign submenu_images = about_images
+                    endif
+                  %}
+                  {% for image in submenu_images %}
+                    <div>
+                      {{ image.heading }}
+                    </div>
+                  {% endfor %}
                 </ul>
               </div>
             </div>
