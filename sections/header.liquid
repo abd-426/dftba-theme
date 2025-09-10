@@ -629,11 +629,37 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
-    }
+    },
   ],
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "submenu_image",
+      "name": "submenu_image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Header"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subheading",
+          "label": "Subheader"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+      ]
     }
   ]
 }
