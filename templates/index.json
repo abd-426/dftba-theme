@@ -106,6 +106,12 @@
     "rich_text": {
       "type": "rich-text",
       "blocks": {
+        "header_image_yjNdaq": {
+          "type": "header_image",
+          "settings": {
+            "image": "shopify://shop_images/SecondaryLogo_Cream-Orange.webp"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -121,6 +127,7 @@
         }
       },
       "block_order": [
+        "header_image_yjNdaq",
         "heading",
         "text"
       ],
