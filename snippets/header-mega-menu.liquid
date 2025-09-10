@@ -82,7 +82,7 @@
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
-                  style="border: 1px solid; padding: 0; grid-template-columns: {% if link.title | downcase == 'shop' %}repeat(4, 1fr){% endif %}"
+                  style="border: 1px solid; padding: 0; grid-template-columns: {% if {{link.title | downcase}} == 'shop' %}repeat(4, 1fr){% endif %}"
                 >
                   {%- for childlink in link.links -%}
                     <li>
