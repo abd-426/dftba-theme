@@ -68,22 +68,14 @@
 
     <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
-        class="collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down slider slider--tablet grid--peek collection-list--{{ section.blocks.size }}-items"
+        class="collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid slider slider--tablet grid--peek collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
       >
-        {%- liquid
-          assign columns = section.blocks.size
-          if columns > 3
-            assign columns = 3
-          endif
-        -%}
-        <div>
-          {% for block in section.blocks %}
-            <input type="radio" name="tabs" id="collection-{{ forloop.index }}" {% if forloop.index == 1 %}checked{% endif %}>
-            <label class="tab" for="collection-{{ forloop.index }}">{{ block.settings.collection.title }}</label>
-          {% endfor %}          
-        </div>
+        {% for block in section.blocks %}
+          <input type="radio" name="tabs" id="collection-{{ forloop.index }}" {% if forloop.index == 1 %}checked{% endif %}>
+          <label class="tab" for="collection-{{ forloop.index }}">{{ block.settings.collection.title }}</label>
+        {% endfor %}          
 
         {%- for block in section.blocks -%}
           <li
