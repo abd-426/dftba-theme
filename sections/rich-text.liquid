@@ -21,8 +21,9 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {% when 'header_image' %}
-              {{ block.settings.image_height }}
-              {{ block.setting.image | image_url: height: block.settings.image_height | image_tag }}
+              {% if block.settings.image %}
+                {{ block.setting.image | image_url | image_tag }}
+              {% endif %}
             {%- when 'heading' -%}
               <h2
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
