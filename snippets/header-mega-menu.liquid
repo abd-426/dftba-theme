@@ -55,7 +55,7 @@
                     class="header__active-menu-item"
                   {% endif %}
                 >
-                  {{- link.title | escape -}}
+                  {{- link.title | escape | upcase -}}
                 </span>
               </a>
               {% comment %} <div
@@ -80,7 +80,7 @@
                           aria-current="page"
                         {% endif %}
                       >
-                        {{ childlink.title | escape }}
+                        {{ childlink.title | escape | upcase }}
                       </a>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
@@ -94,7 +94,7 @@
                                   aria-current="page"
                                 {% endif %}
                               >
-                                {{ grandchildlink.title | escape }}
+                                {{ grandchildlink.title | escape | upcase }}
                               </a>
                             </li>
                           {%- endfor -%}
@@ -121,7 +121,7 @@
                 class="header__active-menu-item"
               {% endif %}
             >
-              {{- link.title | escape -}}
+              {{- link.title | escape | upcase -}}
             </span>
           </a>
         {%- endif -%}
