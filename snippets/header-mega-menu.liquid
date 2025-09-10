@@ -5,13 +5,30 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+<style>
+  .dropdown-menu {
+    position: relative;
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    padding: 20px 25px;
+    z-index: 1;
+  }
+
+  .dropdown-menu:hover .dropdown-content { display: block; }
+</style>
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu dropdown-menu">
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
@@ -27,7 +44,7 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup dropdown-content"
                 tabindex="-1"
               >
                 <ul
