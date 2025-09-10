@@ -109,7 +109,8 @@
         "header_image_yjNdaq": {
           "type": "header_image",
           "settings": {
-            "image": "shopify://shop_images/SecondaryLogo_Cream-Orange.webp"
+            "image": "shopify://shop_images/SecondaryLogo_DarkGreen-Orange.webp",
+            "image_height": 50
           }
         },
         "heading": {
