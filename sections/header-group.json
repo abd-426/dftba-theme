@@ -47,10 +47,31 @@
             "subheading": "Because we're here",
             "link": "shopify://collections/by-hydrogen"
           }
+        },
+        "submenu_image_kCGWXL": {
+          "type": "submenu_image",
+          "settings": {
+            "image": "shopify://shop_images/about-us.png",
+            "menu_title": "about",
+            "heading": "<strong>About Us</strong>",
+            "subheading": "",
+            "link": "shopify://pages/about-us"
+          }
+        },
+        "submenu_image_d7JxdY": {
+          "type": "submenu_image",
+          "settings": {
+            "menu_title": "",
+            "heading": "",
+            "subheading": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "submenu_image_8FjJbf"
+        "submenu_image_8FjJbf",
+        "submenu_image_kCGWXL",
+        "submenu_image_d7JxdY"
       ],
       "settings": {
         "logo_position": "middle-center",
