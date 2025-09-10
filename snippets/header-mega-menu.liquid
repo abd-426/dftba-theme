@@ -124,7 +124,7 @@
                                   {% if grandchildlink.current %}
                                     aria-current="page"
                                   {% endif %}
-                                  style={% if title_lowercase contains 'view all' %}padding-top: 20px;{% elsif title_lowercase contains 'sale' %}padding-top: 20px; color: orange{% elsif title_lowercase contains 'other' %}padding-top: 20px;{% endif %}
+                                  style="{% if title_lowercase contains 'view all' %}padding-top: 20px;{% elsif title_lowercase contains 'sale' %}color: orange{% elsif title_lowercase contains 'other' %}padding-top: 20px;{% endif %}"
                                 >
                                   {{ grandchildlink.title | escape | upcase }}
                                 </a>
