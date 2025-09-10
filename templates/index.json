@@ -137,6 +137,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-ca17f31b-534c-42fb-98f0-8bc77035c9a7",
         "full_width": true,
+        "text_container_width": 1150,
         "padding_top": 72,
         "padding_bottom": 72
       }
@@ -454,6 +455,47 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_as_tabs_HXXjae": {
+      "type": "collection-list-as-tabs",
+      "blocks": {
+        "featured_collection_Cqc9hx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_MnpahA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_k7Yajc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Cqc9hx",
+        "featured_collection_MnpahA",
+        "featured_collection_k7Yajc"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -464,6 +506,7 @@
     "collection_list_LapTyw",
     "multicolumn_wwLQtp",
     "newsletter_a4DB6w",
-    "multicolumn_HBCmLf"
+    "multicolumn_HBCmLf",
+    "collection_list_as_tabs_HXXjae"
   ]
 }
