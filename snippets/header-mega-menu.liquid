@@ -82,12 +82,12 @@
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
-                  style="border: 1px solid; padding: 0; grid-template-columns: {% if link.title == 'shop' %}repeat(4, 1fr){% endif %}"
+                  style="border: 1px solid; padding: 0; grid-template-columns: {% if link.title | upcase == 'shop' %}repeat(4, 1fr){% endif %}"
                 >
                   {%- for childlink in link.links -%}
                     <li>
                       <a
-                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"s
                         href="{{ childlink.url }}"
                         class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
                         {% if childlink.current %}
