@@ -144,7 +144,7 @@
                   {% for image in submenu_images %}
                     <a href={{ image.settings.link }} style="text-decoration: none" class="full-unstyled-link">
                       <div class="submenu" 
-                        style="background-image: url({{ image.settings.image | image_url: height: 400 }}); height: 400px"
+                        style="background-image: url({{ image.settings.image | image_url: height: 400 }}); height: 400px;"
                       >
                         {{ image.settings.heading }}
                       </div>
