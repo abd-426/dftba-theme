@@ -24,6 +24,11 @@
   .dropdown-menu { align-content: center; }
   .dropdown-menu > *:first-child { font-weight: bold } 
 
+  .submenu { 
+    border: 1px solid;
+    padding: 30px;
+   }
+
   .header__inline-menu {
     height: 62px;
   }
@@ -90,9 +95,9 @@
                   role="list"
                   style="padding: 0; display: grid; gap: 0; grid-template-columns: {% if link_title == 'shop' %}repeat(4,1fr);{% else %}repeat(3,1fr);{% endif %}"
                 >
-                  {% if link_title != 'shop' %}<div style="border: 1px solid; padding: 30px;">{% endif %}
+                  {% if link_title != 'shop' %}<div class="submenu">{% endif %}
                     {%- for childlink in link.links -%}
-                    {% if link_title == 'shop' %}<div style="border: 1px solid; padding: 30px;">{% endif %}
+                    {% if link_title == 'shop' %}<div class="submenu">{% endif %}
                       <li>
                         <a
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"s
@@ -134,7 +139,7 @@
                     endif
                   %}
                   {% for image in submenu_images %}
-                    <div>
+                    <div class="submenu">
                       {{ image.settings.heading }}
                     </div>
                   {% endfor %}
