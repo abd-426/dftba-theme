@@ -35,6 +35,13 @@
   }
 {% endstyle %}
 
+{% liquid
+  assign shop_images = images | where: "menu_title", "shop"
+  assign about_images = images | where: "menu_title", "about"
+%}
+
+{{ shop_images.size }}
+{{ about_images.size }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
