@@ -80,8 +80,10 @@
           endif
         -%}
         {% for block in section.blocks %}
-          <input type="radio" name="tabs" id="collection-{{ forloop.index }}" {% if forloop.index == 1 %}checked{% endif %}>
-          <label class="tab" for="collection-{{ forloop.index }}">{{ block.settings.collection.title }}</label>
+          <div>
+            <input type="radio" name="tabs" id="collection-{{ forloop.index }}" {% if forloop.index == 1 %}checked{% endif %}>
+            <label class="tab" for="collection-{{ forloop.index }}">{{ block.settings.collection.title }}</label>
+          </div>
         {% endfor %}
         {%- for block in section.blocks -%}
           <li
