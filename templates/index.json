@@ -383,6 +383,47 @@
         "padding_bottom": 52
       }
     },
+    "email_signup_banner_jF3hUi": {
+      "type": "email-signup-banner",
+      "blocks": {
+        "heading_x96Dpj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Be the first to know!",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_mtx7VU": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know when we launch.</p>",
+            "text_style": "body"
+          }
+        },
+        "email_form_TdgULR": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_x96Dpj",
+        "paragraph_mtx7VU",
+        "email_form_TdgULR"
+      ],
+      "name": "t:sections.email-signup-banner.presets.name",
+      "settings": {
+        "show_background_image": true,
+        "image": "shopify://shop_images/markus-winkler-aId-xYRTlEc-unsplash.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-362541de-5bf4-4f92-a9ed-55bf40760a66",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "multicolumn_HBCmLf": {
       "type": "multicolumn",
       "blocks": {
@@ -469,6 +510,7 @@
     "collection_list_LapTyw",
     "multicolumn_wwLQtp",
     "newsletter_a4DB6w",
+    "email_signup_banner_jF3hUi",
     "multicolumn_HBCmLf"
   ]
 }
