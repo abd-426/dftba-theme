@@ -140,9 +140,9 @@
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
-                    style="text-decoration: underline"
+                    style="text-decoration: underline; font-weight: bold"
                   >
-                    {{- block.settings.link_label | escape -}}
+                    {{- block.settings.link_label | escape | upcase -}}
                   </a>
                 {%- endif -%}
               </div>
