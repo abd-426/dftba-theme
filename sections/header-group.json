@@ -67,12 +67,23 @@
             "subheading": "",
             "link": "shopify://pages/the-dftba-team"
           }
+        },
+        "submenu_image_ewqjrn": {
+          "type": "submenu_image",
+          "settings": {
+            "image": "shopify://shop_images/snowboarding-at-day.png",
+            "menu_title": "Shop",
+            "heading": "sdcvsd",
+            "subheading": "csc",
+            "link": "shopify://pages/faqs"
+          }
         }
       },
       "block_order": [
         "submenu_image_8FjJbf",
         "submenu_image_kCGWXL",
-        "submenu_image_d7JxdY"
+        "submenu_image_d7JxdY",
+        "submenu_image_ewqjrn"
       ],
       "settings": {
         "logo_position": "middle-center",
