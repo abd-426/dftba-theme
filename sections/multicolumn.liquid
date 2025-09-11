@@ -80,7 +80,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container"
+            <div class="multicolumn-card content-container color-{{ section.settings.color_scheme_column }}"
               {% if block.settings.image != blank and section.settings.image_as_background %}style="background-image: url({{ block.settings.image | image_url: width: 1800 }}); height: {{ section.settings.image_height }}px; background-size: cover"{% endif %}
             >
               {%- if block.settings.image != blank and block.settings.image_as_background == false -%}
