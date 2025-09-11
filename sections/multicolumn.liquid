@@ -77,7 +77,9 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container">
+            <div class="multicolumn-card content-container"
+              {% if block.settings.image != blank and block.settings.image_as_background %}style="background-image: url({{ block.settings.image | image_url: height: section.settings.image_height }}); height: {{ section.settings.image_height }}px;"{% endif %}
+            >
               {%- if block.settings.image != blank and block.settings.image_as_background == false -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -290,7 +292,7 @@
       "max": 500,
       "step": 25,
       "unit": "px",
-      "label": "Image height",
+      "label": "Image height (if image as background)",
       "default": 250
     },
     {
