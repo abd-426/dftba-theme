@@ -349,40 +349,6 @@
         "padding_bottom": 36
       }
     },
-    "newsletter_a4DB6w": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_4MepgA": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Be the first to know!</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_nzACfz": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Get the latest updates from your favorite creators plus product launches, limited-run merch, sales, and events happening soon!</p>"
-          }
-        },
-        "email_form_GmY7c6": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_4MepgA",
-        "paragraph_nzACfz",
-        "email_form_GmY7c6"
-      ],
-      "name": "t:sections.newsletter.presets.name",
-      "settings": {
-        "color_scheme": "scheme-362541de-5bf4-4f92-a9ed-55bf40760a66",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "email_signup_banner_jF3hUi": {
       "type": "email-signup-banner",
       "blocks": {
@@ -396,7 +362,7 @@
         "paragraph_mtx7VU": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know when we launch.</p>",
+            "text": "<p>Get the latest updates from your favorite creators plus product launches, limited-run merch, sales, and events happening soon!</p>",
             "text_style": "body"
           }
         },
@@ -415,7 +381,7 @@
         "show_background_image": true,
         "image": "shopify://shop_images/markus-winkler-aId-xYRTlEc-unsplash.webp",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
@@ -509,7 +475,6 @@
     "image_with_text_9HDURy",
     "collection_list_LapTyw",
     "multicolumn_wwLQtp",
-    "newsletter_a4DB6w",
     "email_signup_banner_jF3hUi",
     "multicolumn_HBCmLf"
   ]
