@@ -151,18 +151,34 @@
     {
       "type": "paragraph",
       "content": "t:sections.email-signup-banner.settings.paragraph.content"
+    },   
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.email-signup-banner.settings.image.label"
     },
     {
       "type": "checkbox",
       "id": "show_background_image",
       "label": "t:sections.email-signup-banner.settings.show_background_image.label",
       "default": true
-    },    
+    }, 
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.email-signup-banner.settings.image.label"
-    },
+      "type": "select",
+      "id": "image_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.email-signup-banner.settings.desktop_content_alignment.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.email-signup-banner.settings.desktop_content_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "Image position (if not as background)"
+    }, 
     {
       "type": "range",
       "id": "image_overlay_opacity",
