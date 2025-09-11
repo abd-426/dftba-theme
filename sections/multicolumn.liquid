@@ -127,7 +127,11 @@
               {%- endif -%}
               <div class="multicolumn-card__info" {%if block.settings.image != blank and section.settings.image_as_background%}style="height: {{ section.settings.image_height }}px; align-content: end;"{%endif %}>
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                  {%if block.settings.image != blank and section.settings.image_as_background%}
+                    <h2 class="inline-richtext">{{ block.settings.title }}</h2>
+                  {% else %}
+                    <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                  {% endif %}
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
