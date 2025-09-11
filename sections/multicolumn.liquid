@@ -134,7 +134,9 @@
                   {% endif %}
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                  <div class="rte"
+                    {%if block.settings.image != blank and section.settings.image_as_background%}style="color: white; text-shadow: 1px 1px 2px black;"{%endif %}
+                  >{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
@@ -144,7 +146,11 @@
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
-                    style="text-decoration: underline; font-weight: bold"
+                    {%if block.settings.image != blank and section.settings.image_as_background%}
+                      style="text-decoration: underline; font-weight: bold; color: white; text-shadow: 1px 1px 2px black;"
+                    {% else %}
+                      style="text-decoration: underline; font-weight: bold"
+                    {%endif %}
                   >
                     {{- block.settings.link_label | escape | upcase -}}
                   </a>
