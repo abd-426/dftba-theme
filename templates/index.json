@@ -332,6 +332,7 @@
       "settings": {
         "title": "<strong>You don't want to miss these!</strong>",
         "heading_size": "h1",
+        "subheading": "featured items",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_height": 375,
@@ -442,6 +443,7 @@
       "settings": {
         "title": "<strong>What Our Customers Are Saying</strong>",
         "heading_size": "h2",
+        "subheading": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_height": 250,
