@@ -307,7 +307,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/NileRed-NileBlueBottleOpener-Site.webp",
-            "title": "NileBlue OTF Bottle Opener",
+            "title": "<strong>NileBlue OTF Bottle Opener</strong>",
             "text": "<p>The viral collab from NileBlue & Flipped Tools!</p>",
             "link_label": "Shop now",
             "link": "shopify://products/the-compare-at-price-snowboard"
@@ -317,7 +317,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/map.png",
-            "title": "Map of Fungi Poster",
+            "title": "<strong>Map of Fungi Poster</strong>",
             "text": "<p>A new map about the amazing kingdom of fungi from Domain of Science. Learn all about structures of microscopic hyphae, mycorrhiza, and more!</p>",
             "link_label": "Shop now",
             "link": "shopify://products/the-collection-snowboard-hydrogen"
