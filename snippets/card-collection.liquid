@@ -122,7 +122,7 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
-          <h2 style="font-weight: bold; color: black; margin-top: 10px">
+          <h2 style="font-weight: bold; color: black; margin-top: 0px">
             {%- if card_collection.title != blank -%}
               {{- card_collection.title | escape -}}
             {%- else -%}
