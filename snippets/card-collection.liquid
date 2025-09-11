@@ -122,14 +122,14 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
-          <h2>
+          <h2 style="font-weight: bold; color: black;">
             {%- if card_collection.title != blank -%}
               {{- card_collection.title | escape -}}
             {%- else -%}
               {{ 'onboarding.collection_title' | t }}
             {%- endif -%}
           </h2>
-          <h3 class="card__heading">
+          <h4 class="card__heading">
             <a
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
@@ -145,7 +145,7 @@
               {%- endif %} {% endcomment %}
               EXPLORE
             </a>
-          </h3>
+          </h4>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
             <p class="card__caption">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
