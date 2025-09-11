@@ -99,10 +99,7 @@
             {% endcapture %}
             <div class="multicolumn-card content-container"
               {% if block.settings.image != blank and section.settings.image_as_background %}
-                style="background-image: url({{ block.settings.image | image_url: width: 3200 | image_tag:
-                  widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                  sizes: sizes,
-                  class: 'multicolumn-card__image' }}); height: {{ section.settings.image_height }}px;"
+                style="background-image: url({{ block.settings.image | image_url: width: 3200 | image_tag: widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200', sizes: sizes, class: 'multicolumn-card__image' }}); height: {{ section.settings.image_height }}px;"
               {% endif %}
             >
               {%- if block.settings.image != blank and block.settings.image_as_background == false -%}
