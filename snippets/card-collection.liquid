@@ -83,6 +83,13 @@
       {%- else -%}
         <div class="card__content">
           <div class="card__information">
+            <h2>
+              {%- if card_collection.title != blank -%}
+                {{- card_collection.title | escape -}}
+              {%- else -%}
+                {{ 'onboarding.collection_title' | t }}
+              {%- endif -%}
+            </h2>
             <h3 class="card__heading">
               <a
                 {% if card_collection == blank %}
@@ -92,11 +99,6 @@
                 {% endif %}
                 class="full-unstyled-link"
               >
-                {%- if card_collection.title != blank -%}
-                  {{- card_collection.title | escape -}}
-                {%- else -%}
-                  {{ 'onboarding.collection_title' | t }}
-                {%- endif -%}
                 {%- if card_collection.description == blank -%}
                   <span class="icon-wrap">
                     {{- 'icon-arrow.svg' | inline_asset_content -}}
