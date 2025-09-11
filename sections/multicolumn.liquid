@@ -31,7 +31,9 @@
     {% endif %}
   >
     {%- unless section.settings.title == blank  -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title"
+        style="flex-direction: column"
+      >
         {% if section.settings.subheading %}
           <h3>{{ section.settings.subheading | upcase }}</h3>
         {% endif %}
