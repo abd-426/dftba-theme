@@ -87,12 +87,14 @@
                 {% when 'vendor_links' %}
                   {% if block.settings.collection.metafields.custom.vendor_links %}
                     {% assign links = block.settings.collection.metafields.custom.vendor_links.value %}
-                    {% for link in links %}
-                      <a 
-                        href="{{ link.url }}"
-                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                      >{{ link.text }}</a>
-                    {% endfor %}
+                    <div style="display: flex;">
+                      {% for link in links %}
+                        <a 
+                          href="{{ link.url }}"
+                          class="button button--primary"
+                        >{{ link.text }}</a>
+                      {% endfor %}
+                    </div>
                   {% endif %}
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
