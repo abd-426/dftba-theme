@@ -45,7 +45,9 @@
         },
         "vendor_links_tyCtyg": {
           "type": "vendor_links",
-          "settings": {}
+          "settings": {
+            "collection": "{{ collection }}"
+          }
         }
       },
       "block_order": [
