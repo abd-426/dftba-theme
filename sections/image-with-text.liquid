@@ -84,6 +84,12 @@
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
+                {% when 'vendor_links' %}
+                  {% if collection.metafields.custom.vendor_links %}
+                    {% for link in collection.metafields.custom.vendor_links %}
+                      <a href="{{ link.link }}">{{ link.name }}</a>
+                    {% endfor %}
+                  {% endif %}
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
                     <a
@@ -465,6 +471,11 @@
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
         }
       ]
+    },
+    {
+      "type": "vendor_links",
+      "name": "Vendor links",
+      "limit": 1,
     }
   ],
   "presets": [
