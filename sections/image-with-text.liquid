@@ -88,7 +88,6 @@
                   {% if block.settings.collection.metafields.custom.vendor_links %}
                     {% assign links = block.settings.collection.metafields.custom.vendor_links.value %}
                     {% for link in links %}
-                      {{ link }}
                       <a href="{{ link.url }}">{{ link.text }}</a>
                     {% endfor %}
                   {% endif %}
