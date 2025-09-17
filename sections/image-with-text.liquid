@@ -86,7 +86,7 @@
                   </div>
                 {% when 'vendor_links' %}
                   {% if block.settings.collection.metafields.custom.vendor_links %}
-                    {% assign links = block.settings.collection.metafields.custom.vendor_links | split: "," %}
+                    {% assign links = block.settings.collection.metafields.custom.vendor_links %}
                     {{ links }}
                     {% for link in links %}
                       <a href="{{ link.url }}">{{ link.text }}</a>
