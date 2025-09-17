@@ -86,12 +86,9 @@
                   </div>
                 {% when 'vendor_links' %}
                   {% if block.settings.collection.metafields.custom.vendor_links %}
-                    {% for link in block.settings.collection.metafields.custom.vendor_links %}
+                    {% assign links = block.settings.collection.metafields.custom.vendor_links | split: "," %}
+                    {% for link in links %}
                       <a href="{{ link.url }}">{{ link.text }}</a>
-                    {% endfor %}
-                    {% assign lah = "1234,5678" | split: "," %}
-                    {% for nah in lah %}
-                      nah
                     {% endfor %}
                   {% endif %}
                 {%- when 'button' -%}
