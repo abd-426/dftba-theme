@@ -43,20 +43,16 @@
             "text_style": "subtitle"
           }
         },
-        "button_h4Q3cW": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
+        "vendor_links_tyCtyg": {
+          "type": "vendor_links",
+          "settings": {}
         }
       },
       "block_order": [
         "caption_7nVRpM",
         "heading_wptqmL",
         "text_cdVD7c",
-        "button_h4Q3cW"
+        "vendor_links_tyCtyg"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
