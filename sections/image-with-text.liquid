@@ -88,7 +88,10 @@
                   {% if block.settings.collection.metafields.custom.vendor_links %}
                     {% assign links = block.settings.collection.metafields.custom.vendor_links.value %}
                     {% for link in links %}
-                      <a href="{{ link.url }}">{{ link.text }}</a>
+                      <a 
+                        href="{{ link.url }}"
+                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                      >{{ link.text }}</a>
                     {% endfor %}
                   {% endif %}
                 {%- when 'button' -%}
