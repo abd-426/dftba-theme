@@ -86,8 +86,8 @@
                   </div>
                 {% when 'vendor_links' %}
                   {% if block.settings.collection.metafields.custom.vendor_links %}
+                    {{ block.settings.collection.metafields.custom.vendor_links }}
                     {% for link in block.settings.collection.metafields.custom.vendor_links %}
-                      {{ link }}
                       <a href="{{ link.url }}">{{ link.text }}</a>
                     {% endfor %}
                   {% endif %}
