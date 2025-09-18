@@ -79,7 +79,7 @@
         "text_gHht7N": {
           "type": "text",
           "settings": {
-            "text": "Featured Product",
+            "text": "<p>Featured Product</p>",
             "text_style": "subtitle"
           }
         },
@@ -92,7 +92,7 @@
         "text_PVdAAF": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "{{ section.settings.product.description }}",
             "text_style": "body"
           }
         }
