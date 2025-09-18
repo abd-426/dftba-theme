@@ -62,7 +62,7 @@
                         selected="selected"
                       {% endif %}
                     >
-                      {{ option.name | escape }}
+                      {% comment %} {{ option.name | escape }} {% endcomment %}
                     </option>
                   {%- endfor -%}
                 </select>
