@@ -44,10 +44,10 @@
 {% endstyle %}
 
 {% liquid
-  assign shop_images = images | slice: 0
+  assign shop_images = images | where: "submenu_image.menu_title", "shop"
   assign about_images = images | slice: 1, 2
 %}
-{% for image in images %}
+{% for image in shop_images %}
   {{ image.type }}
 {% endfor %}
 <nav class="header__inline-menu">
