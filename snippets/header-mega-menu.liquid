@@ -44,20 +44,19 @@
 {% endstyle %}
 
 {% liquid
-  assign shop_images = '' | split: ''
-  assign about_images = '' | split: ''
+  assign shop_columns = 3
+  assign about_columns = 1
 
   for image in images
     assign title = image.settings.menu_title | downcase
-    assign single_image = image | split: ''
     if title == "shop"
-      assign shop_images = shop_images | concat: single_image
+      assign shop_columns = shop_columns | plus: 1
     elsif title == "about"
-      assign about_images = about_images | concat: single_image
+      assign about_columns = about_columns | plus: 1
     endif
   endfor
 %}
-{{ shop_images.type }}
+{{ shop_images.size }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -106,7 +105,7 @@
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
-                  style="padding: 0; display: grid; gap: 0; grid-template-columns: {% if link_title == 'shop' %}repeat(4,1fr);{% else %}repeat(3,1fr);{% endif %}"
+                  style="padding: 0; display: grid; gap: 0; grid-template-columns: {% if link_title == 'shop' %}repeat({{ shop_columns }},1fr);{% else %}repeat({{ about_columns }},1fr);{% endif %}"
                 >
                   {% if link_title != 'shop' %}<div class="submenu">{% endif %}
                     {%- for childlink in link.links -%}
@@ -146,23 +145,18 @@
                     {% if link_title == 'shop' %}</div>{% endif %}
                     {%- endfor -%}
                   {% if link_title != 'shop' %}</div>{% endif %}
-                  {% liquid 
-                    if link_title == 'shop'
-                      assign submenu_images = shop_images
-                    else
-                      assign submenu_images = about_images
-                    endif
-                  %}
-                  {% for image in submenu_images %}
-                    <a href={{ image.settings.link }} style="text-decoration: none" class="full-unstyled-link">
-                      <div class="submenu" 
-                        style="background-image: url({{ image.settings.image | image_url: height: 400 }}); height: 400px; display: flex; flex-direction: column; justify-content: end;"
-                      >
-                        <div style="color: white; font-size: 4rem; text-shadow: 1px 1px 2px black;">{{ image.settings.heading }}</div>
-                        <div style="color: white; font-size: 2rem; text-shadow: 1px 1px 2px black;">{{ image.settings.subheading }}</div>
-                      </div>
-                    </a>
-                    
+                  {% for image in images %}
+                    {% assign title = image.settings.menu_title | downcase %}
+                    {% if title == link_title %}
+                      <a href={{ image.settings.link }} style="text-decoration: none" class="full-unstyled-link">
+                        <div class="submenu" 
+                          style="background-image: url({{ image.settings.image | image_url: height: 400 }}); height: 400px; display: flex; flex-direction: column; justify-content: end;"
+                        >
+                          <div style="color: white; font-size: 4rem; text-shadow: 1px 1px 2px black;">{{ image.settings.heading }}</div>
+                          <div style="color: white; font-size: 2rem; text-shadow: 1px 1px 2px black;">{{ image.settings.subheading }}</div>
+                        </div>
+                      </a>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </div>
