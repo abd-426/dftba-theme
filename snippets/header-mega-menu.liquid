@@ -57,13 +57,11 @@
 {% for image in images %}
   {% assign title = image.settings.menu_title | downcase %}
   {% if title == 'about' %}
-    {%assign about_images = about_images | concat: image%}
+    {% assign single_image = image | split: '' %}
+    {%assign about_images = about_images | concat: single_image%}
     {{ about_images }}
   {% endif %}
 {% endfor %}
-
-{% assign blah = images | where: "menu_title", "about" %}
-{{ blah }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
