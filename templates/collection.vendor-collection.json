@@ -107,6 +107,7 @@
         "product": "{{ collection.metafields.custom.featured_product.value }}",
         "color_scheme": "scheme-fee0b903-a86e-4979-8f94-e0dde5d37fa5",
         "secondary_background": false,
+        "info_alignment": "center",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
