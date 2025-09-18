@@ -52,15 +52,12 @@
     assign single_image = image | split: ''
     if title == "shop"
       assign shop_images = shop_images | concat: single_image
-    elsif title == "menu"
+    elsif title == "about"
       assign about_images = about_images | concat: single_image
     endif
   endfor
 %}
 
-{{ about_images }}
-----
-{{ shop_images }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
