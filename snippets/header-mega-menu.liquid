@@ -49,19 +49,18 @@
 
   for image in images
     assign title = image.settings.menu_title | downcase
+    assign single_image = image | split: ''
     if title == "shop"
-      assign shop_images = shop_images | concat: image
+      assign shop_images = shop_images | concat: single_image
+    elsif title == "menu"
+      assign about_images = about_images | concat: single_image
     endif
   endfor
 %}
-{% for image in images %}
-  {% assign title = image.settings.menu_title | downcase %}
-  {% if title == 'about' %}
-    {% assign single_image = image | split: '' %}
-    {%assign about_images = about_images | concat: single_image%}
-    {{ about_images }}
-  {% endif %}
-{% endfor %}
+
+{{ about_images }}
+----
+{{ shop_images }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
