@@ -148,6 +148,9 @@
                             width="{{ block.settings.image.width }}"
                             height="{{ block.settings.image.height }}"
                           >
+                          {% if block.settings.description %}
+                            {{ block.settings.description }}
+                          {% endif %}
                         </div>
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -419,7 +422,12 @@
             }
           ],
           "default": "center"
-        }
+        },
+        {
+          "type": "inline_richtext",
+          "id": "description",
+          "label": "Description"
+        },
       ]
     }
   ],
