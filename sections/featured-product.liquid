@@ -85,7 +85,9 @@
             </div>
           {%- endunless -%}
         </div>
-        <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          style="align-content: {{ section.settings.info_alignment }}"
+        >
           <section
             id="ProductInfo-{{ section.id }}"
             class="product__info-container"
@@ -1350,6 +1352,26 @@
       "id": "secondary_background",
       "default": false,
       "label": "t:sections.featured-product.settings.secondary_background.label"
+    },
+    {
+      "type": "select",
+      "id": "info_alignment",
+      "options": [
+        {
+          "value": "baseline",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "baseline",
+      "label": "Info alignment"
     },
     {
       "type": "header",
