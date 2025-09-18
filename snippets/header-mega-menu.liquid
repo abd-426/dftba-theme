@@ -57,7 +57,8 @@
 {% for image in images %}
   {% assign title = image.settings.menu_title | downcase %}
   {% if title == 'about' %}
-    assign about_images = about_images | concat: image
+    {%assign about_images = about_images | concat: image%}
+    {{ about_images }}
   {% endif %}
 {% endfor %}
 <nav class="header__inline-menu">
