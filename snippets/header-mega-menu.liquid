@@ -62,7 +62,7 @@
   {% endif %}
 {% endfor %}
 
-{% assign blah = images | where: "settings.menu_title", "about" %}
+{% assign blah = images | where: "menu_title", "about" %}
 {{ blah }}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
