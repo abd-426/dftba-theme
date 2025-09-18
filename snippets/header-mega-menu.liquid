@@ -45,11 +45,20 @@
 
 {% liquid
   assign shop_images = '' | split: ''
-  assign about_images = images | slice: 1, 2
+  assign about_images = '' | split: ''
+
+  for image in images
+    assign title = image.settings.menu_title | downcase
+    if title == "shop"
+      assign shop_images = shop_images | concat: image
+    endif
+  endfor
 %}
 {% for image in images %}
   {% assign title = image.settings.menu_title | downcase %}
-  {{ title }}
+  {% if title == 'about' %}
+    {{ title }}
+  {% endif %}
 {% endfor %}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
